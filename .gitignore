@@ -20,6 +20,10 @@ src/assets/audio/
 *.wav
 *.ogg
 
+# Team photos — too large, serve locally  
+public/photo_*.jpg
+public/photo_*.png
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
