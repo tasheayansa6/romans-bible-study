@@ -1,0 +1,77 @@
+/* ============================================================
+   Romans 21 Days Journey — Design System / Theme Variables
+   ============================================================ */
+
+:root {
+  /* ─── Brand Colors ──────────────────────────────────────── */
+  --primary-purple: #5b2c83;
+  --primary-purple-light: #7b4da3;
+  --primary-purple-dark: #3d1a5c;
+
+  --deep-blue: #2575fc;
+  --deep-blue-light: #5596fd;
+  --deep-blue-dark: #1050cc;
+
+  --gold: #d4af37;
+  --gold-light: #e8cc6a;
+  --gold-dark: #a88c1f;
+
+  --cream: #fff8e7;
+  --cream-dark: #f5edcf;
+
+  /* ─── Neutral Palette ───────────────────────────────────── */
+  --white: #ffffff;
+  --off-white: #fafaf8;
+  --text-primary: #1a1025;
+  --text-secondary: #4a3f5e;
+  --text-muted: #8a7fa0;
+
+  /* ─── Glassmorphism ─────────────────────────────────────── */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow: 0 8px 32px rgba(91, 44, 131, 0.18);
+
+  /* ─── Gradients ─────────────────────────────────────────── */
+  --gradient-hero: linear-gradient(
+    135deg,
+    #0a0515 0%,
+    #1a0a2e 25%,
+    #2d1155 50%,
+    #1e2060 75%,
+    #0d1535 100%
+  );
+  --gradient-purple-blue: linear-gradient(
+    135deg,
+    var(--primary-purple),
+    var(--deep-blue)
+  );
+  --gradient-gold: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+  --gradient-section: linear-gradient(180deg, #f8f5ff 0%, #fff8e7 100%);
+
+  /* ─── Typography ────────────────────────────────────────── */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Poppins', system-ui, sans-serif;
+
+  /* ─── Spacing ───────────────────────────────────────────── */
+  --section-padding: clamp(4rem, 8vw, 8rem);
+
+  /* ─── Border Radius ─────────────────────────────────────── */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 9999px;
+
+  /* ─── Shadows ───────────────────────────────────────────── */
+  --shadow-sm: 0 2px 8px rgba(91, 44, 131, 0.12);
+  --shadow-md: 0 8px 24px rgba(91, 44, 131, 0.2);
+  --shadow-lg: 0 16px 48px rgba(91, 44, 131, 0.28);
+  --shadow-glow-purple: 0 0 40px rgba(91, 44, 131, 0.5);
+  --shadow-glow-gold: 0 0 30px rgba(212, 175, 55, 0.4);
+  --shadow-glow-blue: 0 0 40px rgba(37, 117, 252, 0.4);
+
+  /* ─── Transitions ───────────────────────────────────────── */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 600ms ease;
+}

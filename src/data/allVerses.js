@@ -1,0 +1,46 @@
+/**
+ * allVerses.js — Complete verse library compiled from all 21 study days.
+ */
+
+export const allVerses = [
+  { id:'v1',  ref:'Romans 1:16',   chapter:'Romans 1',  dayId:1,  theme:'The Gospel',         text:'For I am not ashamed of the gospel, because it is the power of God that brings salvation to everyone who believes: first to the Jew, then to the Gentile.' },
+  { id:'v2',  ref:'Romans 1:17',   chapter:'Romans 1',  dayId:1,  theme:'Righteousness',      text:'For in the gospel the righteousness of God is revealed — a righteousness that is by faith from first to last, just as it is written: "The righteous will live by faith."' },
+  { id:'v3',  ref:'Romans 1:20',   chapter:'Romans 1',  dayId:1,  theme:'Creation',           text:"For since the creation of the world God's invisible qualities — his eternal power and divine nature — have been clearly seen, being understood from what has been made, so that people are without excuse." },
+  { id:'v4',  ref:'Romans 2:1',    chapter:'Romans 2',  dayId:2,  theme:'Judgment',           text:'You, therefore, have no excuse, you who pass judgment on someone else, for at whatever point you judge another, you are condemning yourself.' },
+  { id:'v5',  ref:'Romans 2:11',   chapter:'Romans 2',  dayId:2,  theme:'Impartiality',       text:'For God does not show favoritism.' },
+  { id:'v6',  ref:'Romans 3:10',   chapter:'Romans 3',  dayId:3,  theme:'Sin',                text:'As it is written: "There is no one righteous, not even one."' },
+  { id:'v7',  ref:'Romans 3:23',   chapter:'Romans 3',  dayId:3,  theme:'Human Sinfulness',   text:'For all have sinned and fall short of the glory of God.' },
+  { id:'v8',  ref:'Romans 3:24',   chapter:'Romans 3',  dayId:3,  theme:'Justification',      text:'And all are justified freely by his grace through the redemption that came by Christ Jesus.' },
+  { id:'v9',  ref:'Romans 3:25',   chapter:'Romans 3',  dayId:3,  theme:'Atonement',          text:'God presented Christ as a sacrifice of atonement, through the shedding of his blood — to be received by faith.' },
+  { id:'v10', ref:'Romans 4:3',    chapter:'Romans 4',  dayId:4,  theme:'Faith',              text:'"Abraham believed God, and it was credited to him as righteousness."' },
+  { id:'v11', ref:'Romans 4:20-21',chapter:'Romans 4',  dayId:4,  theme:'Unwavering Faith',   text:'Yet he did not waver through unbelief regarding the promise of God, but was strengthened in his faith and gave glory to God, being fully persuaded that God had power to do what he had promised.' },
+  { id:'v12', ref:'Romans 5:1',    chapter:'Romans 5',  dayId:5,  theme:'Peace with God',     text:'Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ.' },
+  { id:'v13', ref:'Romans 5:5',    chapter:'Romans 5',  dayId:5,  theme:"God's Love",         text:"And hope does not put us to shame, because God's love has been poured out into our hearts through the Holy Spirit, who has been given to us." },
+  { id:'v14', ref:'Romans 5:8',    chapter:'Romans 5',  dayId:5,  theme:"God's Love",         text:'But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.' },
+  { id:'v15', ref:'Romans 6:4',    chapter:'Romans 6',  dayId:6,  theme:'New Life',           text:'We were therefore buried with him through baptism into death in order that, just as Christ was raised from the dead through the glory of the Father, we too may live a new life.' },
+  { id:'v16', ref:'Romans 6:11',   chapter:'Romans 6',  dayId:6,  theme:'Dead to Sin',        text:'In the same way, count yourselves dead to sin but alive to God in Christ Jesus.' },
+  { id:'v17', ref:'Romans 6:23',   chapter:'Romans 6',  dayId:6,  theme:'Eternal Life',       text:'For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.' },
+  { id:'v18', ref:'Romans 7:24-25',chapter:'Romans 7',  dayId:8,  theme:'Deliverance',        text:'What a wretched man I am! Who will rescue me from this body that is subject to death? Thanks be to God, who delivers me through Jesus Christ our Lord!' },
+  { id:'v19', ref:'Romans 8:1',    chapter:'Romans 8',  dayId:9,  theme:'No Condemnation',    text:'Therefore, there is now no condemnation for those who are in Christ Jesus.' },
+  { id:'v20', ref:'Romans 8:5',    chapter:'Romans 8',  dayId:9,  theme:'Holy Spirit',        text:'Those who live according to the flesh have their minds set on what the flesh desires; but those who live in accordance with the Spirit have their minds set on what the Spirit desires.' },
+  { id:'v21', ref:'Romans 8:16',   chapter:'Romans 8',  dayId:9,  theme:'Adoption',           text:"The Spirit himself testifies with our spirit that we are God's children." },
+  { id:'v22', ref:'Romans 8:28',   chapter:'Romans 8',  dayId:9,  theme:"God's Providence",   text:'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.' },
+  { id:'v23', ref:'Romans 8:38-39',chapter:'Romans 8',  dayId:9,  theme:"God's Unfailing Love",text:"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord." },
+  { id:'v24', ref:'Romans 9:15-16',chapter:'Romans 9',  dayId:10, theme:"God's Sovereignty",  text:'"I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion." It does not, therefore, depend on human desire or effort, but on God\'s mercy.' },
+  { id:'v25', ref:'Romans 10:9',   chapter:'Romans 10', dayId:11, theme:'Salvation',           text:'If you declare with your mouth, "Jesus is Lord," and believe in your heart that God raised him from the dead, you will be saved.' },
+  { id:'v26', ref:'Romans 10:17',  chapter:'Romans 10', dayId:11, theme:'Faith',               text:'Consequently, faith comes from hearing the message, and the message is heard through the word about Christ.' },
+  { id:'v27', ref:'Romans 11:33',  chapter:'Romans 11', dayId:12, theme:"God's Wisdom",        text:'Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out!' },
+  { id:'v28', ref:'Romans 11:36',  chapter:'Romans 11', dayId:12, theme:'Doxology',            text:'For from him and through him and for him are all things. To him be the glory forever! Amen.' },
+  { id:'v29', ref:'Romans 12:1',   chapter:'Romans 12', dayId:14, theme:'Surrender',           text:"Therefore, I urge you, brothers and sisters, in view of God's mercy, to offer your bodies as a living sacrifice, holy and pleasing to God — this is your true and proper worship." },
+  { id:'v30', ref:'Romans 12:2',   chapter:'Romans 12', dayId:14, theme:'Transformation',      text:"Do not conform to the pattern of this world, but be transformed by the renewing of your mind." },
+  { id:'v31', ref:'Romans 12:9',   chapter:'Romans 12', dayId:14, theme:'Love',                text:'Love must be sincere. Hate what is evil; cling to what is good.' },
+  { id:'v32', ref:'Romans 13:8',   chapter:'Romans 13', dayId:15, theme:'Love',                text:'Let no debt remain outstanding, except the continuing debt to love one another, for whoever loves others has fulfilled the law.' },
+  { id:'v33', ref:'Romans 13:14',  chapter:'Romans 13', dayId:15, theme:'Christ',              text:'Rather, clothe yourselves with the Lord Jesus Christ, and do not think about how to gratify the desires of the flesh.' },
+  { id:'v34', ref:'Romans 14:19',  chapter:'Romans 14', dayId:16, theme:'Unity',               text:'Let us therefore make every effort to do what leads to peace and to mutual edification.' },
+  { id:'v35', ref:'Romans 15:5-6', chapter:'Romans 15', dayId:17, theme:'Unity',               text:'May the God who gives endurance and encouragement give you the same attitude of mind toward each other that Christ Jesus had, so that with one mind and one voice you may glorify the God and Father of our Lord Jesus Christ.' },
+  { id:'v36', ref:'Romans 15:13',  chapter:'Romans 15', dayId:17, theme:'Hope',                text:'May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.' },
+  { id:'v37', ref:'Romans 16:25',  chapter:'Romans 16', dayId:18, theme:'Doxology',            text:'Now to him who is able to establish you in accordance with my gospel, the message I proclaim about Jesus Christ, in keeping with the revelation of the mystery hidden for long ages past.' },
+  { id:'v38', ref:'Romans 8:30',   chapter:'Romans 8',  dayId:19, theme:'Glorification',       text:'And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified.' },
+]
+
+export default allVerses
