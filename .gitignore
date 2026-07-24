@@ -12,17 +12,12 @@ dist
 dist-ssr
 *.local
 
-# Audio files — too large for GitHub (serve locally)
-public/audio/
+# Audio files — in git (needed for Vercel deployment)
 src/assets/audio/
-*.m4a
-*.mp3
+
+# Large format audio only
 *.wav
 *.ogg
-
-# Team photos — too large, serve locally  
-public/photo_*.jpg
-public/photo_*.png
 
 # Editor directories and files
 .vscode/*
