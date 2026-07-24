@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Audio files — too large for GitHub (serve locally)
+public/audio/
+src/assets/audio/
+*.m4a
+*.mp3
+*.wav
+*.ogg
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
