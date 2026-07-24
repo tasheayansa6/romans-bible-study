@@ -1,9 +1,10 @@
 /**
  * Team.jsx  —  /team
- * Our Team page using the 2 photos from /public/.
+ * Our Team page with photos, bios, and contact information.
  */
 
 import { motion } from 'framer-motion'
+import { Send, Mail, Phone } from 'lucide-react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -21,6 +22,12 @@ const TEAM = [
     bio: 'Passionate about combining faith and technology to create meaningful devotional experiences. Driven by the belief that every believer deserves a premium tool to encounter God\'s Word.',
     tags: ['React', 'Design', 'Vision'],
     verse: '"For I am not ashamed of the gospel." — Romans 1:16',
+    contacts: [
+      { icon: Send,  label: 'Telegram',  value: '@tasheea5',              href: 'https://t.me/tasheea5' },
+      { icon: Mail,  label: 'Email',     value: 'tasheayansa6@gmail.com', href: 'mailto:tasheayansa6@gmail.com' },
+      { icon: Phone, label: 'Phone',     value: '0926 637 774',           href: 'tel:+251926637774' },
+      { icon: null,  label: 'Instagram', value: '@tasheayansa',            href: 'https://instagram.com/tasheayansa', emoji: '📸' },
+    ],
   },
   {
     name: 'Dibora Diriba (DD)',
@@ -29,15 +36,18 @@ const TEAM = [
     bio: 'Dedicated to making the Book of Romans accessible, practical, and transformative for every believer. Crafting study content that connects ancient truth to modern life.',
     tags: ['Theology', 'Content', 'Prayer'],
     verse: '"Do not conform to the pattern of this world." — Romans 12:2',
+    contacts: [
+      { icon: Send,  label: 'Telegram',  value: '@Ddaughterofjesus',      href: 'https://t.me/Ddaughterofjesus' },
+      { icon: Mail,  label: 'Email',     value: 'Coming soon',             href: null },
+      { icon: Phone, label: 'Phone',     value: 'Coming soon',             href: null },
+      { icon: null,  label: 'Instagram', value: '@Daughter_jesus1212',     href: 'https://instagram.com/Daughter_jesus1212', emoji: '📸' },
+    ],
   },
 ]
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: (i) => ({
-    opacity: 1, y: 0,
-    transition: { duration: 0.6, delay: i * 0.15, ease: 'easeOut' },
-  }),
+  visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.15, ease: 'easeOut' } }),
 }
 
 export default function Team() {
@@ -174,7 +184,7 @@ export default function Team() {
 
               {/* Favourite verse */}
               <blockquote style={{
-                margin: 0, padding: '0.75rem 1rem',
+                margin: '0 0 1.25rem', padding: '0.75rem 1rem',
                 background: 'rgba(91,44,131,0.04)',
                 borderRadius: 'var(--radius-lg)',
                 borderLeft: '3px solid var(--primary-purple)',
@@ -186,6 +196,63 @@ export default function Team() {
                   {member.verse}
                 </p>
               </blockquote>
+
+              {/* Contact links */}
+              <div style={{
+                borderTop: '1px solid rgba(91,44,131,0.1)',
+                paddingTop: '1.1rem',
+              }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.65rem', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', margin: '0 0 0.75rem' }}>
+                  Get in touch
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  {member.contacts.map(({ icon: Icon, label, value, href, emoji }) => (
+                    <div key={label}>
+                      {href ? (
+                        <a href={href} target="_blank" rel="noopener noreferrer"
+                          style={{
+                            display: 'inline-flex', alignItems: 'center', gap: '0.55rem',
+                            color: 'var(--text-secondary)', textDecoration: 'none',
+                            fontFamily: 'var(--font-body)', fontSize: '0.82rem',
+                            transition: 'color 0.2s ease', padding: '0.2rem 0',
+                          }}
+                          onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-purple)'}
+                          onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+                          aria-label={`${label}: ${value}`}
+                        >
+                          <div style={{
+                            width: '28px', height: '28px', borderRadius: 'var(--radius-sm)',
+                            background: 'rgba(91,44,131,0.08)', border: '1px solid rgba(91,44,131,0.12)',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                          }}>
+                            {Icon
+                              ? <Icon size={13} color="var(--primary-purple)" aria-hidden="true" />
+                              : <span style={{ fontSize: '0.85rem' }} aria-hidden="true">{emoji}</span>}
+                          </div>
+                          <span>{value}</span>
+                        </a>
+                      ) : (
+                        <div style={{
+                          display: 'inline-flex', alignItems: 'center', gap: '0.55rem',
+                          color: 'var(--text-muted)', fontFamily: 'var(--font-body)',
+                          fontSize: '0.82rem', opacity: 0.55,
+                        }}>
+                          <div style={{
+                            width: '28px', height: '28px', borderRadius: 'var(--radius-sm)',
+                            background: 'rgba(0,0,0,0.04)', border: '1px solid rgba(0,0,0,0.08)',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                          }}>
+                            {Icon
+                              ? <Icon size={13} color="var(--text-muted)" aria-hidden="true" />
+                              : <span style={{ fontSize: '0.85rem' }} aria-hidden="true">{emoji}</span>}
+                          </div>
+                          <span style={{ fontStyle: 'italic' }}>{value}</span>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </motion.article>
           ))}
         </div>
