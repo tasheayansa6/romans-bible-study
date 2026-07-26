@@ -19,6 +19,7 @@ const NAV_COL2 = [
   { label: 'Prayer',      href: '/prayer-journal' },
   { label: 'Notes',       href: '/notes' },
   { label: 'Certificate', href: '/certificate' },
+  { label: 'Schedule',    href: '/schedule' },
   { label: 'Our Team',    href: '/team' },
   { label: 'Settings',    href: '/settings' },
 ]

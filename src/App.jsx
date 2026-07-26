@@ -20,6 +20,7 @@ import Certificate     from './pages/Certificate'
 import Verses          from './pages/Verses'
 import Settings        from './pages/Settings'
 import Team            from './pages/Team'
+import StudySchedule   from './pages/StudySchedule'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -38,6 +39,7 @@ function AnimatedRoutes() {
         <Route path="/verses"         element={<Verses />} />
         <Route path="/settings"       element={<Settings />} />
         <Route path="/team"           element={<Team />} />
+        <Route path="/schedule"       element={<StudySchedule />} />
       </Routes>
     </AnimatePresence>
   )

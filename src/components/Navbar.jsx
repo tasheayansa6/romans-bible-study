@@ -19,6 +19,7 @@ const NAV_LINKS = [
   { label: 'Journal',    href: '/journal'       },
   { label: 'Prayer',     href: '/prayer-journal'},
   { label: 'Notes',      href: '/notes'         },
+  { label: 'Schedule',   href: '/schedule'      },
   { label: 'Our Team',   href: '/team'          },
 ]
 

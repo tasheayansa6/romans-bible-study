@@ -92,7 +92,62 @@ export default function Team() {
 
       <main style={{ maxWidth: '1100px', margin: '0 auto', padding: 'clamp(3rem, 6vw, 5rem) 1.5rem' }}>
 
-        {/* Team Cards */}
+        {/* ── Study Schedule Banner (FIRST) ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          style={{ marginBottom: '2.5rem' }}
+        >
+          <div style={{
+            background: 'linear-gradient(135deg, rgba(91,44,131,0.06), rgba(37,117,252,0.04))',
+            border: '1.5px solid rgba(91,44,131,0.18)',
+            borderRadius: 'var(--radius-xl)',
+            padding: 'clamp(1.5rem, 4vw, 2.5rem)',
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            flexWrap: 'wrap', gap: '1.25rem',
+          }}>
+            <div>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.68rem', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--primary-purple)', display: 'block', marginBottom: '0.35rem' }}>
+                📅 Romans Bible Study
+              </span>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.3rem, 3vw, 1.8rem)', fontWeight: '600', color: 'var(--text-primary)', margin: '0 0 0.4rem', lineHeight: 1.15 }}>
+                Study Plan: Dibora &amp; Tashee
+              </h2>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.88rem', color: 'var(--text-secondary)', margin: '0 0 0.85rem', lineHeight: 1.6 }}>
+                6-week Romans study · 4 sessions/week · Sun, Tue, Thu, Sat · 7:00–8:00 PM
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                {['Week 1: Romans 1–4', 'Week 2: Romans 5–7', 'Week 3: Romans 8–11', 'Week 4: Romans 12–14', 'Week 5: Romans 15–16', 'Week 6: Celebration'].map((w, i) => (
+                  <span key={i} style={{
+                    fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: '500',
+                    color: i < 3 ? 'var(--primary-purple)' : 'var(--deep-blue)',
+                    background: i < 3 ? 'rgba(91,44,131,0.08)' : 'rgba(37,117,252,0.08)',
+                    border: `1px solid ${i < 3 ? 'rgba(91,44,131,0.18)' : 'rgba(37,117,252,0.18)'}`,
+                    padding: '0.15rem 0.6rem', borderRadius: 'var(--radius-full)',
+                  }}>{w}</span>
+                ))}
+              </div>
+            </div>
+            <motion.a
+              href="/schedule"
+              whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.45rem',
+                padding: '0.75rem 1.6rem',
+                background: 'linear-gradient(135deg, var(--primary-purple), var(--deep-blue))',
+                color: 'white', textDecoration: 'none', borderRadius: 'var(--radius-full)',
+                fontFamily: 'var(--font-body)', fontSize: '0.9rem', fontWeight: '600',
+                boxShadow: 'var(--shadow-md)', whiteSpace: 'nowrap', flexShrink: 0,
+              }}
+            >
+              📋 View Full Schedule
+            </motion.a>
+          </div>
+        </motion.div>
+
+        {/* ── Team Cards ── */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: 'clamp(3rem, 6vw, 5rem)' }}>
           {TEAM.map((member, i) => (
             <motion.article
