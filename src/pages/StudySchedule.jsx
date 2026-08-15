@@ -1,6 +1,6 @@
 /**
  * StudySchedule.jsx  —  /schedule
- * Romans Bible Study Plan — table view with reschedule feature for Dibora & Tashee.
+ * Romans Bible Study Plan — table view with reschedule feature for Tashee Ayansa.
  * Each row: Week | Day | Name | Study | Verse | Time | Status
  * Both partners can edit meeting times and mark sessions complete.
  */
@@ -52,7 +52,7 @@ const DEFAULT_SCHEDULE = [
   { id:'w6-4', week:6, theme:'Living the Gospel', day:'Saturday', chapter:'Celebration & Thanksgiving', verse:'Romans 11:36', time:'7:00 PM – 8:00 PM', completed:false, isCelebration:true },
 ]
 
-const PARTNERS = ['Dibora', 'Tashee']
+const PARTNERS = ['Tashee']
 
 const WEEK_COLORS = [
   'var(--primary-purple)',
@@ -115,7 +115,7 @@ function EditableCell({ value, onSave, type = 'text', placeholder = '' }) {
 // ── Main page ─────────────────────────────────────────────────
 export default function StudySchedule() {
   const [schedule, setSchedule] = useLocalStorage('romans-schedule', DEFAULT_SCHEDULE)
-  const [activePartner, setActivePartner] = useState('Dibora')
+  const [activePartner, setActivePartner] = useState('Tashee')
   const [filterWeek, setFilterWeek] = useState('All')
   const [showReset, setShowReset] = useState(false)
 
@@ -177,7 +177,7 @@ export default function StudySchedule() {
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .2 }}
             style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', fontSize: 'clamp(.95rem,2vw,1.2rem)', color: 'var(--gold-light)', margin: '0 0 .4rem' }}>
-            Dibora &amp; Tashee — 6 Weeks · 4 Days/Week
+          Romans Study Plan — 6 Weeks · 4 Days/Week
           </motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .28 }}
             style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', fontSize: '.88rem', color: 'rgba(255,255,255,.5)', margin: 0 }}>
@@ -206,7 +206,7 @@ export default function StudySchedule() {
                 }}
                 aria-pressed={activePartner === p}
               >
-                {p === 'Dibora' ? '👑' : '✝'} {p}
+                {p === 'Tashee' ? '✝' : '📖'} {p}
               </button>
             ))}
             <span style={{ fontFamily: 'var(--font-body)', fontSize: '.75rem', color: 'var(--text-muted)', alignSelf: 'center', marginLeft: '.25rem' }}>
@@ -422,7 +422,7 @@ export default function StudySchedule() {
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           style={{ background: 'linear-gradient(135deg,var(--primary-purple) 0%,var(--deep-blue) 100%)', borderRadius: 'var(--radius-xl)', padding: 'clamp(1.5rem,4vw,2.25rem)', textAlign: 'center', boxShadow: 'var(--shadow-glow-purple)' }}>
           <p style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.3rem,3vw,1.8rem)', fontWeight: '600', color: 'white', margin: '0 0 .5rem' }}>
-            🤝 Dibora &amp; Tashee — Study Covenant
+            🙏 Romans 21 Days — Study Covenant
           </p>
           <p style={{ fontFamily: 'var(--font-heading)', fontStyle: 'italic', fontSize: '.95rem', color: 'var(--gold-light)', margin: '0 0 1.25rem' }}>
             "Let the word of Christ dwell in you richly…" — Colossians 3:16

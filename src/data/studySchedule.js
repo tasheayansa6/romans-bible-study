@@ -1,10 +1,10 @@
 /**
- * studySchedule.js — Romans Bible Study Plan for Dibora & Tashee
+ * studySchedule.js — Romans Bible Study Plan for Tashee Ayansa
  */
 
 export const studyPartners = {
-  leader: { name: 'Dibora', role: 'Study Leader' },
-  partner: { name: 'Tashee', role: 'Study Partner' },
+  leader: { name: 'Tashee', role: 'Study Leader' },
+  partner: { name: 'Study Partner', role: 'Study Partner' },
   book: 'Romans (16 Chapters)',
   duration: '6 Weeks',
   meetingTime: '7:00 PM – 8:00 PM',

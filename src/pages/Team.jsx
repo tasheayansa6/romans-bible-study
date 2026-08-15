@@ -99,7 +99,7 @@ export default function Team() {
                 📅 Romans Bible Study
               </span>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.3rem, 3vw, 1.8rem)', fontWeight: '600', color: 'var(--text-primary)', margin: '0 0 0.4rem', lineHeight: 1.15 }}>
-                Study Plan: Dibora &amp; Tashee
+                Study Plan: Tashee Ayansa
               </h2>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.88rem', color: 'var(--text-secondary)', margin: '0 0 0.85rem', lineHeight: 1.6 }}>
                 6-week Romans study · 4 sessions/week · Sun, Tue, Thu, Sat · 7:00–8:00 PM
