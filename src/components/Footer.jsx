@@ -40,8 +40,6 @@ const TEAM_CONTACTS = [
     role: 'Content & Spiritual Direction',
     contacts: [
       { icon: Send,  label: 'Telegram',  value: '@Ddaughterofjesus',       href: 'https://t.me/Ddaughterofjesus' },
-      { icon: Mail,  label: 'Email',     value: 'Coming soon',             href: null },
-      { icon: Phone, label: 'Phone',     value: 'Coming soon',             href: null },
       { icon: null,  label: 'Instagram', value: '@Daughter_jesus1212',      href: 'https://instagram.com/Daughter_jesus1212', emoji: '📸' },
     ],
   },
