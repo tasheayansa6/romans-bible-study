@@ -29,18 +29,6 @@ const TEAM = [
       { icon: null,  label: 'Instagram', value: '@tasheayansa',            href: 'https://instagram.com/tasheayansa', emoji: '📸' },
     ],
   },
-  {
-    name: 'Dibora Diriba (DD)',
-    role: 'Content & Spiritual Direction',
-    photo: '/photo_2026-07-17_23-44-46.jpg',
-    bio: 'Dedicated to making the Book of Romans accessible, practical, and transformative for every believer. Crafting study content that connects ancient truth to modern life.',
-    tags: ['Theology', 'Content', 'Prayer'],
-    verse: '"Do not conform to the pattern of this world." — Romans 12:2',
-    contacts: [
-      { icon: Send,  label: 'Telegram',  value: '@Ddaughterofjesus',      href: 'https://t.me/Ddaughterofjesus' },
-      { icon: null,  label: 'Instagram', value: '@Daughter_jesus1212',     href: 'https://instagram.com/Daughter_jesus1212', emoji: '📸' },
-    ],
-  },
 ]
 
 const cardVariants = {

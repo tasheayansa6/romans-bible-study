@@ -35,14 +35,6 @@ const TEAM_CONTACTS = [
       { icon: null,  label: 'Instagram', value: '@tasheayansa',             href: 'https://instagram.com/tasheayansa', emoji: '📸' },
     ],
   },
-  {
-    name: 'Dibora Diriba (DD)',
-    role: 'Content & Spiritual Direction',
-    contacts: [
-      { icon: Send,  label: 'Telegram',  value: '@Ddaughterofjesus',       href: 'https://t.me/Ddaughterofjesus' },
-      { icon: null,  label: 'Instagram', value: '@Daughter_jesus1212',      href: 'https://instagram.com/Daughter_jesus1212', emoji: '📸' },
-    ],
-  },
 ]
 
 const linkStyle = {
@@ -186,42 +178,6 @@ export default function Footer() {
                     <span style={{ ...linkStyle, cursor: 'default', opacity: 0.45 }}>
                       {Icon ? <Icon size={12} color="var(--gold)" aria-hidden="true" /> : <span aria-hidden="true" style={{ fontSize: '0.75rem' }}>{emoji}</span>}
                       <span style={{ fontSize: '0.82rem' }}>{value}</span>
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* ── Contact: Dibora ── */}
-          <motion.div
-            initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }} transition={{ duration: 0.55, delay: 0.23 }}
-          >
-            <h3 style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: '700', letterSpacing: '0.13em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '0.35rem', visibility: 'hidden' }}>
-              ·
-            </h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', fontWeight: '600', color: 'rgba(255,255,255,0.7)', margin: '0 0 0.75rem' }}>
-              {TEAM_CONTACTS[1].name}
-              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.65rem', color: 'var(--text-muted)', fontWeight: '400', display: 'block' }}>{TEAM_CONTACTS[1].role}</span>
-            </p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
-              {TEAM_CONTACTS[1].contacts.map(({ icon: Icon, label, value, href, emoji }) => (
-                <li key={label}>
-                  {href ? (
-                    <a href={href} target="_blank" rel="noopener noreferrer"
-                      style={{ ...linkStyle, color: 'rgba(255,255,255,0.6)' }}
-                      onMouseEnter={e => e.currentTarget.style.color = 'var(--gold-light)'}
-                      onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
-                      aria-label={`${label}: ${value}`}
-                    >
-                      {Icon ? <Icon size={12} color="var(--gold)" aria-hidden="true" /> : <span aria-hidden="true" style={{ fontSize: '0.75rem' }}>{emoji}</span>}
-                      <span style={{ fontSize: '0.82rem' }}>{value}</span>
-                    </a>
-                  ) : (
-                    <span style={{ ...linkStyle, cursor: 'default', opacity: 0.4 }}>
-                      {Icon ? <Icon size={12} color="var(--gold)" aria-hidden="true" /> : <span aria-hidden="true" style={{ fontSize: '0.75rem' }}>{emoji}</span>}
-                      <span style={{ fontSize: '0.82rem', fontStyle: 'italic' }}>{value}</span>
                     </span>
                   )}
                 </li>
